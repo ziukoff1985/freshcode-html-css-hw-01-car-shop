@@ -41,7 +41,7 @@ img {
   align-items: center;
   padding: 16px 32px;
   width: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 29px 0px rgba(0, 0, 0, 0.53);
 }
 
 .menu {
@@ -71,14 +71,14 @@ img {
 
 .title {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 30px;
   padding-bottom: 60px;
   font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 5px 0 auto;
+  margin: 30px 0 auto;
   text-decoration: underline;
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
 }
 
 .article-header {
@@ -129,9 +129,12 @@ section {
 }
 
 article {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 29px 0px rgba(0, 0, 0, 0.53);
   padding: 16px;
   margin-bottom: 80px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 li {
@@ -153,6 +156,7 @@ li {
   font-weight: 500;
   color: rgb(0, 0, 0);
   cursor: pointer;
+  box-shadow: 0px 2px 29px 0px rgba(0, 0, 0, 0.53);
 }
 
 .address-container {
@@ -171,7 +175,8 @@ li {
 footer {
   margin-top: 50px;
   padding: 16px 32px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 29px 0px rgba(0, 0, 0, 0.53);
+  background-color: rgb(214, 214, 214);
 }
 
 .copyright {
