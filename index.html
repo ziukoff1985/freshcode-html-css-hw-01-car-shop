@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Car Shop</title>
+    <title>Global Auto House</title>
     <link
       rel="shortcut icon"
       href="./assets/icons/icon.ico"
@@ -12,23 +12,27 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="">Ford</a></li>
-          <li><a href="">Toyota</a></li>
-          <li><a href="">BMW</a></li>
+    <header class="header">
+      <nav id="menu">
+        <ul class="menu">
+          <li><a href="#ford" class="menu-link">Ford</a></li>
+          <li><a href="#toyota" class="menu-link">Toyota</a></li>
+          <li><a href="#bmw" class="menu-link">BMW</a></li>
         </ul>
       </nav>
-      <div>
+      <div class="logo-container">
         <img src="./assets/images/main-logo.jpeg" alt="car-shop-logo" />
       </div>
     </header>
     <main>
-      <h1></h1>
-      <article>
-        <div><img src="./assets/images/ford-logo.jpg" alt="ford-logo" /></div>
-        <h2>FORD</h2>
+      <h1 class="title">Global Auto House</h1>
+      <article id="ford">
+        <div class="article-header">
+          <div class="brand-logo">
+            <img src="./assets/images/ford-logo.jpg" alt="ford-logo" />
+          </div>
+          <h2 class="brand-name">FORD</h2>
+        </div>
         <section>
           <h3>History</h3>
           <p>
@@ -94,12 +98,15 @@
             </li>
           </ul>
         </section>
+        <a href="#menu" class="back-to-menu">Back to menu</a>
       </article>
-      <article>
-        <div>
-          <img src="./assets/images/toyota-logo.jpg" alt="toyota-logo" />
+      <article id="toyota">
+        <div class="article-header">
+          <div class="brand-logo">
+            <img src="./assets/images/toyota-logo.jpg" alt="toyota-logo" />
+          </div>
+          <h2 class="brand-name">TOYOTA</h2>
         </div>
-        <h2>TOYOTA</h2>
         <section>
           <h3>History</h3>
           <p>
@@ -166,10 +173,15 @@
             </li>
           </ul>
         </section>
+        <a href="#menu" class="back-to-menu">Back to menu</a>
       </article>
-      <article>
-        <div><img src="./assets/images/bmw-logo.jpg" alt="bmw-logo" /></div>
-        <h2>BMW</h2>
+      <article id="bmw">
+        <div class="article-header">
+          <div class="brand-logo">
+            <img src="./assets/images/bmw-logo.jpg" alt="bmw-logo" />
+          </div>
+          <h2 class="brand-name">BMW</h2>
+        </div>
         <section>
           <h3>History</h3>
           <p>
@@ -237,23 +249,33 @@
             </li>
           </ul>
         </section>
+        <a href="#menu" class="back-to-menu">Back to menu</a>
       </article>
     </main>
     <footer>
       <address>
-        <p><span>Dealership Name:</span>Global Auto House</p>
-        <p>
-          <span>Address:</span>Prosvity St, 15, Sviatopetrivske, Kyiv Oblast,
-          08141, Ukraine
-        </p>
-        <a href="mailto:info@globalautohouse.ua"
-          ><span>Email:</span>info@globalautohouse.ua</a
-        >
-        <a href="tel:+380501234567"><span>Phone:</span>+380501234567</a>
-        <a href="https://toyota-ua.com/ua/" target="_blank"
-          ><span>Shop URL:</span>www.globalautohouse.ua</a
-        >
-        <p>&copy; All rights reserved</p>
+        <div class="address-container">
+          <p class="address">
+            <span class="address-span">Address:</span>Prosvity St, 15,
+            Sviatopetrivske, Kyiv Oblast, 08141, Ukraine
+          </p>
+          <div class="footer-contacts">
+            <a href="mailto:info@globalautohouse.ua"
+              ><span class="address-span">Email:</span
+              >info@globalautohouse.ua</a
+            >
+            <a href="tel:+380501234567"
+              ><span class="address-span">Phone:</span>+380501234567</a
+            >
+          </div>
+          <a
+            class="address-link"
+            href="https://toyota-ua.com/ua/"
+            target="_blank"
+            >www.globalautohouse.ua</a
+          >
+        </div>
+        <p class="copyright">Global Auto House &copy; All rights reserved</p>
       </address>
     </footer>
   </body>
